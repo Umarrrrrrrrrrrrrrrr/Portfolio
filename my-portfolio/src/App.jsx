@@ -80,13 +80,35 @@ function App() {
         </div>
 
         <aside className="hero-sidebar" aria-label="Portfolio introduction">
-          <article className="hero-info">
-            <p className="eyebrow">About Me</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis
-              ullamcorper quis id elementum convallis lacus gravida.
-            </p>
-            <a href="#about">Learn More</a>
+          <article className="hero-info cube-info">
+            <a className="about-cube-link" href="#about" aria-label="Learn more about me">
+              <span className="about-cube" aria-hidden="true">
+                <span className="cube-face cube-front">
+                  <strong>About Me</strong>
+                  <small>Web Developer</small>
+                </span>
+                <span className="cube-face cube-back">
+                  <strong>Clean Code</strong>
+                  <small>React + UI</small>
+                </span>
+                <span className="cube-face cube-right">
+                  <strong>Creative</strong>
+                  <small>Problem Solver</small>
+                </span>
+                <span className="cube-face cube-left">
+                  <strong>Modern</strong>
+                  <small>Responsive Sites</small>
+                </span>
+                <span className="cube-face cube-top">
+                  <strong>Learning</strong>
+                  <small>Every Project</small>
+                </span>
+                <span className="cube-face cube-bottom">
+                  <strong>Let&apos;s Build</strong>
+                  <small>Something Useful</small>
+                </span>
+              </span>
+            </a>
           </article>
           <article className="hero-info">
             <p className="eyebrow">My Work</p>
@@ -120,15 +142,52 @@ function App() {
       </section>
 
       <section className="section about-section" id="about">
-        <div>
+        <div className="about-heading">
           <p className="eyebrow">About</p>
-          <h2>Developer with a product-minded approach.</h2>
+          <h2>Hi, I&apos;m Umar Abdulla Ansari.</h2>
+          <p>
+            I&apos;m a web developer who enjoys building modern, responsive, and
+            user-friendly web experiences.
+          </p>
         </div>
-        <p>
-          I enjoy turning ideas into useful, attractive interfaces. My work sits
-          at the intersection of clear design, maintainable code, and thoughtful
-          user experience.
-        </p>
+        <div className="about-content">
+          <p>
+            I specialize in creating clean interfaces with HTML, CSS,
+            JavaScript, React, Node.js, and database-driven application
+            workflows. I like turning ideas into real digital products that are
+            simple to use, easy to maintain, and built with care.
+          </p>
+          <p>
+            My journey into web development started with curiosity about how
+            websites work and grew into a strong interest in solving problems
+            through code. Every project helps me improve my design thinking,
+            frontend skills, backend understanding, and ability to build
+            practical solutions from scratch.
+          </p>
+          <div className="about-highlights" aria-label="About me highlights">
+            <span>Responsive UI</span>
+            <span>Clean Code</span>
+            <span>React Development</span>
+            <span>Problem Solving</span>
+          </div>
+          <p>
+            What makes my work different is my focus on clarity. I enjoy
+            breaking complex problems into simple steps, writing maintainable
+            code, and designing experiences that feel smooth for real users.
+          </p>
+          <p>
+            Outside coding, I enjoy exploring new tools, learning about modern
+            technology, and working on personal projects that challenge me to
+            grow. I&apos;m currently improving my skills in full-stack development,
+            cloud tools, and AI-powered web experiences.
+          </p>
+          <p>
+            I&apos;m always excited to collaborate on meaningful projects. If
+            you&apos;d like to build something useful together, feel free to get in
+            touch.
+          </p>
+          <a className="about-action" href="#contact">Let&apos;s Work Together</a>
+        </div>
       </section>
 
       <section className="section" id="work">
